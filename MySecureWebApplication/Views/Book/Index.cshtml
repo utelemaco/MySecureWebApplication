@@ -1,0 +1,17 @@
+﻿@model List<string>
+@{
+    ViewData["Title"] = "Books";
+}
+
+<h1>Books</h1>
+
+This is the main page.
+
+<a asp-action="Create" class="btn btn-success">Add Book</a>
+
+<ul>
+@foreach(var book in Model) 
+{
+    <li>@book</li>
+}
+</ul>
